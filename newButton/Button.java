@@ -1,4 +1,6 @@
 package newButton;
+import java.awt.Color;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -6,14 +8,15 @@ public class Button extends JFrame{
    
      Button(){
          JButton btn1 = new JButton();
-         btn1.setBounds(10, 300, 200, 100);
+         btn1.setBounds(10, 300, 200, 100);// កំណត់គម្លាត x,y និង កំណត់ទំហំ width, height
          btn1.setText("Button demo");
-         btn1.setFocusable(false);
+         btn1.setFocusable(false); // លុប border
 
          JButton btn2 = new JButton();
          btn2.setBounds(210, 300, 200, 100);
          btn2.setText("Hello world");
          btn2.setFocusable(false);
+         btn2.setBackground(Color.GREEN);
 
          JButton btn3 = new JButton();
          btn3.setBounds(410, 300, 200, 100);
